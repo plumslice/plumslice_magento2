@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Plumslice Team
+ * @copyright Copyright (c) 2016 Plumslice (http://www.plumslice.com)
+ * @package Plumslice_Api
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Api/etc/extension_attributes.xsd">
+    <extension_attributes for="Magento\Catalog\Api\Data\ProductAttributeMediaGalleryEntryInterface">
+        <attribute code="image_url" type="string" />
+    </extension_attributes>
+</config>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Plumslice Team
+ * @copyright Copyright (c) 2016 Plumslice (http://www.plumslice.com)
+ * @package Plumslice_Api
+ */
+-->
+<config>
+  <type name="Magento\Catalog\Model\Product\Gallery\GalleryManagement">
+    <plugin name="Plumslice_Api::before" type="Plumslice\Api\Plugin\Before" sortOrder="1" />
+  </type>
+  <type name="Magento\Catalog\Model\Product\Attribute\Backend\Media\ImageEntryConverter">
+    <plugin name="Plumslice_Api::before" type="Plumslice\Api\Plugin\Before" sortOrder="1" />
+  </type>	
+</config>
