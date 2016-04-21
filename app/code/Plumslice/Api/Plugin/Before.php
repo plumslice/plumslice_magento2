@@ -45,9 +45,9 @@ class Before
 	}
         public function beforeConvertFrom($plumslice, ProductAttributeMediaGalleryEntryInterface $entry)
 	{
-		//print_r($entry->getContent());
-	    
-		
+		//print_r($entry->getExtensionAttributes());
+	    	
+		if ($entry->getExtensionAttributes() != ''){
 		$imageUrl = $entry->getExtensionAttributes()->getImageUrl();
 		//print_r($imageUrl);
 		//exit();
@@ -66,6 +66,7 @@ class Before
 		  $arrayobject = new ImageContent($newcontentarray);	
 		  $entry->setContent($arrayobject);
 		  
+		}
 		}
 		//print_r($entry->getContent());
 		//exit();
